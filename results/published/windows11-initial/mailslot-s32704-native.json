@@ -1,0 +1,49 @@
+{
+  "method": "mailslot",
+  "child_ready": true,
+  "config": {
+    "message_count": 1000,
+    "message_size": 32704,
+    "warmup_count": 100,
+    "trials": 3,
+    "output_format": "json",
+    "role": "parent"
+  },
+  "trials": [
+    {
+      "trial_index": 1,
+      "total_micros": 14697.5,
+      "average_micros": 14.6975,
+      "min_micros": 13.15,
+      "max_micros": 23.81,
+      "stddev_micros": 1.9402790392105973,
+      "message_rate": 68038.7821058003
+    },
+    {
+      "trial_index": 2,
+      "total_micros": 14355.6,
+      "average_micros": 14.3556,
+      "min_micros": 13.029999999999998,
+      "max_micros": 22.36,
+      "stddev_micros": 1.4540566151288608,
+      "message_rate": 69659.22706121653
+    },
+    {
+      "trial_index": 3,
+      "total_micros": 14324.299999999996,
+      "average_micros": 14.324299999999996,
+      "min_micros": 13.229999999999999,
+      "max_micros": 26.24,
+      "stddev_micros": 1.636492135636466,
+      "message_rate": 69811.43930244411
+    }
+  ],
+  "summary": {
+    "total_micros": 43377.399999999994,
+    "average_micros": 14.459133333333332,
+    "min_micros": 13.029999999999998,
+    "max_micros": 26.24,
+    "stddev_micros": 1.697330035346364,
+    "message_rate": 69160.43838496546
+  }
+}

@@ -1,0 +1,27 @@
+# Build artifacts
+/target
+*.pdb
+
+# Local Python environments and caches
+/.venv
+/.ruff_cache
+/__pycache__/
+*.pyc
+*.pyo
+
+# Editor settings
+/.idea
+/.vscode
+
+# Lockfiles kept out of this repo
+/Cargo.lock
+/uv.lock
+
+# Generated benchmark output
+/results/*
+!/results/published/
+!/results/published/**
+
+# Windows desktop metadata
+Thumbs.db
+Desktop.ini

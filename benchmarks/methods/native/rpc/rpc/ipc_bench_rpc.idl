@@ -1,0 +1,14 @@
+[
+    uuid(6b11c4f0-9c16-4d82-9dc1-32617c84e402),
+    version(1.0),
+    pointer_default(unique)
+]
+interface ipc_bench_rpc
+{
+    void IpcBenchPing(
+        [in] handle_t binding,
+        [in, size_is(length)] byte request[],
+        [out, size_is(length)] byte response[],
+        [in] unsigned long length
+    );
+}

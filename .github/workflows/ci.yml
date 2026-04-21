@@ -1,0 +1,57 @@
+name: ci
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  windows:
+    runs-on: windows-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Install Python 3.14
+        run: uv python install 3.14
+
+      - name: Install stable Rust
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+
+      - name: Run Ruff lint
+        run: uv tool run ruff check benchmarks\methods\python
+
+      - name: Check Ruff formatting
+        run: uv tool run ruff format --check benchmarks\methods\python
+
+      - name: Check Rust formatting
+        run: cargo fmt --all --check
+
+      - name: Run Clippy
+        run: cargo clippy --workspace --all-targets -- -D warnings
+
+      - name: Build workspace
+        run: cargo build --workspace
+
+      - name: Run tests
+        run: cargo test --workspace
+
+      - name: Run smoke benchmark
+        shell: pwsh
+        run: |
+          cargo run -p placeholder -- --message-count 32 --message-size 256 --warmup-count 8 --trials 1 --format json | Out-Null
+          cargo run -p copy-roundtrip -- --message-count 16 --message-size 128 --warmup-count 4 --trials 1 --format json | Out-Null
+          cargo run -p anon-pipe -- --message-count 16 --message-size 128 --warmup-count 4 --trials 1 --format json | Out-Null
+          cargo run -p shm-mailbox-hybrid -- --message-count 16 --message-size 128 --warmup-count 4 --trials 1 --format json | Out-Null
+          cargo run -p shm-ring-hybrid -- --message-count 16 --message-size 128 --warmup-count 4 --trials 1 --format json | Out-Null
+          cargo run -p af-unix -- --message-count 16 --message-size 128 --warmup-count 4 --trials 1 --format json | Out-Null
+          cargo run -p rpc -- --message-count 16 --message-size 128 --warmup-count 4 --trials 1 --format json | Out-Null
+          cargo run -p alpc -- --message-count 16 --message-size 128 --warmup-count 4 --trials 1 --format json | Out-Null
+          uv run --python 3.14 python -m benchmarks.methods.python.py_multiprocessing_pipe.run --message-count 16 --message-size 128 --warmup-count 4 --trials 1 --format json | Out-Null

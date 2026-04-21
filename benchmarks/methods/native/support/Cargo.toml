@@ -1,0 +1,23 @@
+[package]
+name = "support"
+edition.workspace = true
+license.workspace = true
+version.workspace = true
+
+[dependencies]
+harness = { path = "../../../harness" }
+ntapi = "0.4"
+socket2 = { version = "0.6", features = ["all"] }
+winapi = { version = "0.3", features = ["ntdef", "winnt"] }
+windows-sys = { version = "0.61", features = [
+    "Win32_Foundation",
+    "Win32_Networking_WinSock",
+    "Win32_Security",
+    "Win32_Storage_FileSystem",
+    "Win32_System_IO",
+    "Win32_System_Mailslots",
+    "Win32_System_Memory",
+    "Win32_System_Pipes",
+    "Win32_System_SystemServices",
+    "Win32_System_Threading",
+] }

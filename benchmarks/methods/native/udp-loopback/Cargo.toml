@@ -1,0 +1,8 @@
+[package]
+name = "udp-loopback"
+edition.workspace = true
+license.workspace = true
+version.workspace = true
+
+[dependencies]
+support = { path = "../support" }

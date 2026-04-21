@@ -1,0 +1,12 @@
+{
+    "started_at":  "2026-04-21T14:30:52.1698822-06:00",
+    "updated_at":  "2026-04-21T14:31:16.0138539-06:00",
+    "status":  "completed",
+    "build_profile":  "release",
+    "completed":  110,
+    "failed":  0,
+    "error":  "",
+    "failures":  [
+
+                 ]
+}

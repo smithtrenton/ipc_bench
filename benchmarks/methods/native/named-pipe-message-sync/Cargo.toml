@@ -1,0 +1,8 @@
+[package]
+name = "named-pipe-message-sync"
+edition.workspace = true
+license.workspace = true
+version.workspace = true
+
+[dependencies]
+support = { path = "../support" }

@@ -1,0 +1,30 @@
+{
+    "generated_at":  "2026-04-21T14:30:54.7686264-06:00",
+    "operating_system":  {
+                             "Caption":  "Microsoft Windows 11 Pro",
+                             "Version":  "10.0.26200",
+                             "BuildNumber":  "26200"
+                         },
+    "processor":  {
+                      "Name":  "AMD Ryzen 9 7950X3D 16-Core Processor          ",
+                      "NumberOfCores":  16,
+                      "NumberOfLogicalProcessors":  32
+                  },
+    "rustc":  "rustc 1.94.0 (4a4ef493e 2026-03-02)",
+    "cargo":  "cargo 1.94.0 (85eff7c80 2026-01-15)",
+    "python":  "Python 3.14.3",
+    "build_profile":  "release",
+    "parameters":  {
+                       "output_dir":  "results\\published\\windows11-initial",
+                       "trials":  3,
+                       "message_count":  1000,
+                       "warmup_count":  100,
+                       "message_sizes":  [
+                                             64,
+                                             1024,
+                                             4096,
+                                             16384,
+                                             32704
+                                         ]
+                   }
+}

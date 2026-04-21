@@ -1,0 +1,49 @@
+{
+  "method": "py-socket-tcp-loopback",
+  "child_ready": true,
+  "config": {
+    "message_count": 1000,
+    "message_size": 64,
+    "warmup_count": 100,
+    "trials": 3,
+    "output_format": "json",
+    "role": "parent"
+  },
+  "trials": [
+    {
+      "trial_index": 1,
+      "total_micros": 21806.0,
+      "average_micros": 21.806,
+      "min_micros": 18.68,
+      "max_micros": 39.660000000000004,
+      "stddev_micros": 3.5358503927626805,
+      "message_rate": 45858.93790699808
+    },
+    {
+      "trial_index": 2,
+      "total_micros": 21039.0,
+      "average_micros": 21.039,
+      "min_micros": 18.56,
+      "max_micros": 45.54,
+      "stddev_micros": 4.292785925247147,
+      "message_rate": 47530.77617757498
+    },
+    {
+      "trial_index": 3,
+      "total_micros": 21175.1,
+      "average_micros": 21.175099999999997,
+      "min_micros": 18.48,
+      "max_micros": 39.78,
+      "stddev_micros": 3.950675004350523,
+      "message_rate": 47225.278747207805
+    }
+  ],
+  "summary": {
+    "total_micros": 64020.1,
+    "average_micros": 21.340033333333334,
+    "min_micros": 18.48,
+    "max_micros": 45.54,
+    "stddev_micros": 3.9527640538685787,
+    "message_rate": 46860.28294238841
+  }
+}

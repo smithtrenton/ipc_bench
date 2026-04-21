@@ -1,0 +1,67 @@
+{
+  "method": "mailslot",
+  "child_ready": true,
+  "config": {
+    "message_count": 5000,
+    "message_size": 16384,
+    "warmup_count": 200,
+    "trials": 5,
+    "output_format": "json",
+    "role": "parent"
+  },
+  "trials": [
+    {
+      "trial_index": 1,
+      "total_micros": 62768.40000000001,
+      "average_micros": 12.553680000000002,
+      "min_micros": 11.206000000000001,
+      "max_micros": 19.28,
+      "stddev_micros": 1.3390861277752077,
+      "message_rate": 79657.91704105887
+    },
+    {
+      "trial_index": 2,
+      "total_micros": 63854.09999999997,
+      "average_micros": 12.770819999999993,
+      "min_micros": 11.122,
+      "max_micros": 17.298000000000002,
+      "stddev_micros": 1.2445885455040955,
+      "message_rate": 78303.50752731622
+    },
+    {
+      "trial_index": 3,
+      "total_micros": 60641.69999999999,
+      "average_micros": 12.128339999999998,
+      "min_micros": 10.506000000000002,
+      "max_micros": 17.88,
+      "stddev_micros": 1.1595986910996405,
+      "message_rate": 82451.51438696476
+    },
+    {
+      "trial_index": 4,
+      "total_micros": 59079.90000000002,
+      "average_micros": 11.815980000000005,
+      "min_micros": 10.169999999999998,
+      "max_micros": 16.456000000000003,
+      "stddev_micros": 1.097907883021158,
+      "message_rate": 84631.15205002036
+    },
+    {
+      "trial_index": 5,
+      "total_micros": 57702.600000000006,
+      "average_micros": 11.54052,
+      "min_micros": 10.056,
+      "max_micros": 18.14,
+      "stddev_micros": 1.250900015828603,
+      "message_rate": 86651.2080911432
+    }
+  ],
+  "summary": {
+    "total_micros": 304046.69999999995,
+    "average_micros": 12.161867999999998,
+    "min_micros": 10.056,
+    "max_micros": 19.28,
+    "stddev_micros": 1.3029312455290947,
+    "message_rate": 82224.21095180446
+  }
+}

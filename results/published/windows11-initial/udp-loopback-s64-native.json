@@ -1,0 +1,49 @@
+{
+  "method": "udp-loopback",
+  "child_ready": true,
+  "config": {
+    "message_count": 1000,
+    "message_size": 64,
+    "warmup_count": 100,
+    "trials": 3,
+    "output_format": "json",
+    "role": "parent"
+  },
+  "trials": [
+    {
+      "trial_index": 1,
+      "total_micros": 18824.199999999997,
+      "average_micros": 18.824199999999998,
+      "min_micros": 16.71,
+      "max_micros": 28.18,
+      "stddev_micros": 2.1096574034662594,
+      "message_rate": 53123.107489295704
+    },
+    {
+      "trial_index": 2,
+      "total_micros": 20517.800000000003,
+      "average_micros": 20.5178,
+      "min_micros": 16.72,
+      "max_micros": 35.05,
+      "stddev_micros": 4.072848040376661,
+      "message_rate": 48738.168809521485
+    },
+    {
+      "trial_index": 3,
+      "total_micros": 19603.999999999996,
+      "average_micros": 19.603999999999996,
+      "min_micros": 16.85,
+      "max_micros": 28.43,
+      "stddev_micros": 2.493356372442576,
+      "message_rate": 51009.99795960009
+    }
+  ],
+  "summary": {
+    "total_micros": 58946.0,
+    "average_micros": 19.648666666666667,
+    "min_micros": 16.71,
+    "max_micros": 35.05,
+    "stddev_micros": 3.0926097213985626,
+    "message_rate": 50894.03861161063
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "method": "anon-pipe",
+  "child_ready": false,
+  "config": {
+    "message_count": 1000,
+    "message_size": 1024,
+    "warmup_count": 100,
+    "trials": 3,
+    "output_format": "json",
+    "role": "parent"
+  },
+  "trials": [
+    {
+      "trial_index": 1,
+      "total_micros": 13218.7,
+      "average_micros": 13.2187,
+      "min_micros": 11.540000000000001,
+      "max_micros": 26.74,
+      "stddev_micros": 2.243715068808871,
+      "message_rate": 75650.40435141126
+    },
+    {
+      "trial_index": 2,
+      "total_micros": 13448.000000000007,
+      "average_micros": 13.448000000000008,
+      "min_micros": 11.52,
+      "max_micros": 24.740000000000002,
+      "stddev_micros": 2.3600627110312127,
+      "message_rate": 74360.49970255797
+    },
+    {
+      "trial_index": 3,
+      "total_micros": 14208.800000000001,
+      "average_micros": 14.208800000000002,
+      "min_micros": 11.540000000000001,
+      "max_micros": 26.05,
+      "stddev_micros": 2.540191047933206,
+      "message_rate": 70378.92010584989
+    }
+  ],
+  "summary": {
+    "total_micros": 40875.50000000001,
+    "average_micros": 13.625166666666669,
+    "min_micros": 11.52,
+    "max_micros": 26.74,
+    "stddev_micros": 2.4217042839473373,
+    "message_rate": 73393.59763183324
+  }
+}

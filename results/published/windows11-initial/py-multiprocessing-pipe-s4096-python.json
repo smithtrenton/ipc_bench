@@ -1,0 +1,49 @@
+{
+  "method": "py-multiprocessing-pipe",
+  "child_ready": true,
+  "config": {
+    "message_count": 1000,
+    "message_size": 4096,
+    "warmup_count": 100,
+    "trials": 3,
+    "output_format": "json",
+    "role": "parent"
+  },
+  "trials": [
+    {
+      "trial_index": 1,
+      "total_micros": 31499.0,
+      "average_micros": 31.499,
+      "min_micros": 26.07,
+      "max_micros": 49.53,
+      "stddev_micros": 4.623273840040194,
+      "message_rate": 31747.039588558368
+    },
+    {
+      "trial_index": 2,
+      "total_micros": 30575.7,
+      "average_micros": 30.5757,
+      "min_micros": 25.660000000000004,
+      "max_micros": 46.33,
+      "stddev_micros": 4.6929162053034785,
+      "message_rate": 32705.710744153035
+    },
+    {
+      "trial_index": 3,
+      "total_micros": 37567.4,
+      "average_micros": 37.5674,
+      "min_micros": 25.57,
+      "max_micros": 69.53,
+      "stddev_micros": 9.152361402392282,
+      "message_rate": 26618.823767415364
+    }
+  ],
+  "summary": {
+    "total_micros": 99642.1,
+    "average_micros": 33.21403333333333,
+    "min_micros": 25.57,
+    "max_micros": 69.53,
+    "stddev_micros": 7.211513622827196,
+    "message_rate": 30107.755657498183
+  }
+}

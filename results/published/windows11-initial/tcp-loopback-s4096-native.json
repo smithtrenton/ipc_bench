@@ -1,0 +1,49 @@
+{
+  "method": "tcp-loopback",
+  "child_ready": true,
+  "config": {
+    "message_count": 1000,
+    "message_size": 4096,
+    "warmup_count": 100,
+    "trials": 3,
+    "output_format": "json",
+    "role": "parent"
+  },
+  "trials": [
+    {
+      "trial_index": 1,
+      "total_micros": 23231.799999999992,
+      "average_micros": 23.231799999999993,
+      "min_micros": 19.45,
+      "max_micros": 52.19,
+      "stddev_micros": 5.102099446306392,
+      "message_rate": 43044.44769669162
+    },
+    {
+      "trial_index": 2,
+      "total_micros": 21951.900000000005,
+      "average_micros": 21.951900000000006,
+      "min_micros": 19.55,
+      "max_micros": 39.0,
+      "stddev_micros": 3.1646692386409043,
+      "message_rate": 45554.14337711085
+    },
+    {
+      "trial_index": 3,
+      "total_micros": 22303.899999999994,
+      "average_micros": 22.303899999999995,
+      "min_micros": 19.31,
+      "max_micros": 45.06,
+      "stddev_micros": 3.699447227627393,
+      "message_rate": 44835.208192289254
+    }
+  ],
+  "summary": {
+    "total_micros": 67487.59999999999,
+    "average_micros": 22.495866666666664,
+    "min_micros": 19.31,
+    "max_micros": 52.19,
+    "stddev_micros": 4.107181058693284,
+    "message_rate": 44452.61055364245
+  }
+}

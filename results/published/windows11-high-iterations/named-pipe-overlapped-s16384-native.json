@@ -1,0 +1,85 @@
+{
+  "method": "named-pipe-overlapped",
+  "child_ready": true,
+  "config": {
+    "message_count": 100000,
+    "message_size": 16384,
+    "warmup_count": 10000,
+    "trials": 7,
+    "output_format": "json",
+    "role": "parent"
+  },
+  "trials": [
+    {
+      "trial_index": 1,
+      "total_micros": 1501347.7000000014,
+      "average_micros": 15.013477000000014,
+      "min_micros": 12.047,
+      "max_micros": 24.8,
+      "stddev_micros": 1.776383492793997,
+      "message_rate": 66606.82265673696
+    },
+    {
+      "trial_index": 2,
+      "total_micros": 1533044.099999998,
+      "average_micros": 15.33044099999998,
+      "min_micros": 12.568,
+      "max_micros": 31.424,
+      "stddev_micros": 1.898383283354286,
+      "message_rate": 65229.6956101916
+    },
+    {
+      "trial_index": 3,
+      "total_micros": 1616740.7000000004,
+      "average_micros": 16.167407000000004,
+      "min_micros": 12.8,
+      "max_micros": 29.589000000000002,
+      "stddev_micros": 2.8062715291559,
+      "message_rate": 61852.83762572438
+    },
+    {
+      "trial_index": 4,
+      "total_micros": 1634760.7000000027,
+      "average_micros": 16.34760700000003,
+      "min_micros": 12.988,
+      "max_micros": 28.701,
+      "stddev_micros": 2.53963349453243,
+      "message_rate": 61171.032555406935
+    },
+    {
+      "trial_index": 5,
+      "total_micros": 1762888.4999999993,
+      "average_micros": 17.628884999999993,
+      "min_micros": 13.037,
+      "max_micros": 47.25,
+      "stddev_micros": 3.401340426622275,
+      "message_rate": 56725.08499544926
+    },
+    {
+      "trial_index": 6,
+      "total_micros": 1683660.0999999992,
+      "average_micros": 16.83660099999999,
+      "min_micros": 13.255,
+      "max_micros": 39.356,
+      "stddev_micros": 3.3713914948873858,
+      "message_rate": 59394.41102155955
+    },
+    {
+      "trial_index": 7,
+      "total_micros": 1625000.9999999998,
+      "average_micros": 16.250009999999996,
+      "min_micros": 12.69,
+      "max_micros": 33.576,
+      "stddev_micros": 2.6842209819424303,
+      "message_rate": 61538.42366866237
+    }
+  ],
+  "summary": {
+    "total_micros": 11357442.8,
+    "average_micros": 16.22491828571429,
+    "min_micros": 12.047,
+    "max_micros": 47.25,
+    "stddev_micros": 2.8248054982159996,
+    "message_rate": 61633.592378735106
+  }
+}

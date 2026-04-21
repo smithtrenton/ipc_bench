@@ -1,0 +1,11 @@
+[workspace]
+members = [
+    "benchmarks/harness", "benchmarks/methods/native/af-unix", "benchmarks/methods/native/alpc", "benchmarks/methods/native/anon-pipe", "benchmarks/methods/native/copy-roundtrip", "benchmarks/methods/native/mailslot", "benchmarks/methods/native/named-pipe-byte-sync", "benchmarks/methods/native/named-pipe-message-sync", "benchmarks/methods/native/named-pipe-overlapped",
+    "benchmarks/methods/native/placeholder", "benchmarks/methods/native/rpc", "benchmarks/methods/native/shm-events", "benchmarks/methods/native/shm-mailbox-hybrid", "benchmarks/methods/native/shm-mailbox-spin", "benchmarks/methods/native/shm-ring-hybrid", "benchmarks/methods/native/shm-ring-spin", "benchmarks/methods/native/shm-semaphores", "benchmarks/methods/native/support", "benchmarks/methods/native/tcp-loopback", "benchmarks/methods/native/udp-loopback",
+]
+resolver = "2"
+
+[workspace.package]
+edition = "2024"
+license = "MIT"
+version = "0.1.0"

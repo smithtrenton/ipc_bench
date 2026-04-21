@@ -1,0 +1,49 @@
+{
+  "method": "shm-ring-hybrid",
+  "child_ready": true,
+  "config": {
+    "message_count": 1000,
+    "message_size": 64,
+    "warmup_count": 100,
+    "trials": 3,
+    "output_format": "json",
+    "role": "parent"
+  },
+  "trials": [
+    {
+      "trial_index": 1,
+      "total_micros": 316.10000000000036,
+      "average_micros": 0.3161000000000004,
+      "min_micros": 0.27999999999999997,
+      "max_micros": 1.55,
+      "stddev_micros": 0.12705034435215043,
+      "message_rate": 3163555.8367605153
+    },
+    {
+      "trial_index": 2,
+      "total_micros": 306.10000000000036,
+      "average_micros": 0.30610000000000037,
+      "min_micros": 0.27,
+      "max_micros": 1.85,
+      "stddev_micros": 0.16491146109352137,
+      "message_rate": 3266906.2397909146
+    },
+    {
+      "trial_index": 3,
+      "total_micros": 286.9000000000004,
+      "average_micros": 0.2869000000000004,
+      "min_micros": 0.27,
+      "max_micros": 0.78,
+      "stddev_micros": 0.052013363667426954,
+      "message_rate": 3485535.0296270433
+    }
+  ],
+  "summary": {
+    "total_micros": 909.100000000001,
+    "average_micros": 0.30303333333333365,
+    "min_micros": 0.27,
+    "max_micros": 1.85,
+    "stddev_micros": 0.12447676713168432,
+    "message_rate": 3299967.000329993
+  }
+}

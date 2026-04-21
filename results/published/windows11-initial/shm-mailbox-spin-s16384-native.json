@@ -1,0 +1,49 @@
+{
+  "method": "shm-mailbox-spin",
+  "child_ready": true,
+  "config": {
+    "message_count": 1000,
+    "message_size": 16384,
+    "warmup_count": 100,
+    "trials": 3,
+    "output_format": "json",
+    "role": "parent"
+  },
+  "trials": [
+    {
+      "trial_index": 1,
+      "total_micros": 2220.900000000001,
+      "average_micros": 2.220900000000001,
+      "min_micros": 1.98,
+      "max_micros": 3.2700000000000005,
+      "stddev_micros": 0.13707731395092337,
+      "message_rate": 450267.90940609644
+    },
+    {
+      "trial_index": 2,
+      "total_micros": 2178.5000000000014,
+      "average_micros": 2.1785000000000014,
+      "min_micros": 1.85,
+      "max_micros": 3.2399999999999998,
+      "stddev_micros": 0.15422953673016077,
+      "message_rate": 459031.44365389005
+    },
+    {
+      "trial_index": 3,
+      "total_micros": 2196.999999999999,
+      "average_micros": 2.196999999999999,
+      "min_micros": 2.03,
+      "max_micros": 3.3,
+      "stddev_micros": 0.24271176320895524,
+      "message_rate": 455166.13563950855
+    }
+  ],
+  "summary": {
+    "total_micros": 6596.4000000000015,
+    "average_micros": 2.1988000000000003,
+    "min_micros": 1.85,
+    "max_micros": 3.3,
+    "stddev_micros": 0.18474277613301507,
+    "message_rate": 454793.52374022186
+  }
+}

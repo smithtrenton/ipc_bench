@@ -1,0 +1,49 @@
+{
+  "method": "named-pipe-message-sync",
+  "child_ready": true,
+  "config": {
+    "message_count": 1000,
+    "message_size": 16384,
+    "warmup_count": 100,
+    "trials": 3,
+    "output_format": "json",
+    "role": "parent"
+  },
+  "trials": [
+    {
+      "trial_index": 1,
+      "total_micros": 15449.599999999999,
+      "average_micros": 15.449599999999998,
+      "min_micros": 10.89,
+      "max_micros": 35.58,
+      "stddev_micros": 5.120062483993725,
+      "message_rate": 64726.59486329743
+    },
+    {
+      "trial_index": 2,
+      "total_micros": 12945.2,
+      "average_micros": 12.945200000000002,
+      "min_micros": 11.129999999999999,
+      "max_micros": 28.190000000000005,
+      "stddev_micros": 2.3510791054322278,
+      "message_rate": 77248.7099465439
+    },
+    {
+      "trial_index": 3,
+      "total_micros": 12367.900000000007,
+      "average_micros": 12.367900000000008,
+      "min_micros": 11.06,
+      "max_micros": 34.019999999999996,
+      "stddev_micros": 2.4301326280678586,
+      "message_rate": 80854.47003937609
+    }
+  ],
+  "summary": {
+    "total_micros": 40762.700000000004,
+    "average_micros": 13.587566666666667,
+    "min_micros": 10.89,
+    "max_micros": 35.58,
+    "stddev_micros": 3.7866232642759092,
+    "message_rate": 73596.69501774907
+  }
+}
